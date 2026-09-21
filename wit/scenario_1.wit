@@ -1,0 +1,21 @@
+package foo:bar;
+
+world scenario-one {
+    import collisions;
+    export collisions;
+}
+
+interface collisions {
+    variant a {
+        tag(string),
+    }
+
+    resource b {
+        take-handle: func();
+        set-handle: func();
+        handle: func();
+        drop: func();
+        on-drop: func();
+    }
+}
+
