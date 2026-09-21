@@ -18,7 +18,7 @@ These are the current reserved functions that have a risk of collision:
 
 ### Steps to recreate
 1. Install [componentize-go](https://github.com/bytecodealliance/componentize-go)
-2. Navigate to the repo root and run `componentize-go --world scenario-one bindings --generate-stubs --pkg-name bindings -o bindings`
+2. Navigate to the repo root and run `componentize-go --world scenario-one bindings --generate-stubs -o bindings`
 
 ## Scenario 2: Collisions between bindings generated from enum-like types and other user-defined types
 
@@ -28,4 +28,4 @@ I propose we fix this by formatting the `const`s generated for the enum-like typ
 
 ### Steps to recreate
 1. Install [componentize-go](https://github.com/bytecodealliance/componentize-go)
-2. Navigate to the repo root and run `componentize-go --world scenario-two bindings --pkg-name bindings -o bindings`
+2. Navigate to the repo root and run `componentize-go --world scenario-two bindings -o bindings`
